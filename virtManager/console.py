@@ -232,9 +232,6 @@ class vmmConsolePages(vmmGObjectUI):
         self.widget("console-overlay").add_overlay(overlay)
 
         # Make viewer widget background always be black
-        black = Gdk.Color(0, 0, 0)
-        self.widget("console-gfx-viewport").modify_bg(Gtk.StateType.NORMAL,
-                                                      black)
 
         self.widget("console-pages").set_show_tabs(False)
         self.widget("serial-pages").set_show_tabs(False)
