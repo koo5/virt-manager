@@ -183,16 +183,6 @@
                         <signal name="activate" handler="on_details_menu_screenshot_activate" swapped="no"/>
                       </object>
                     </child>
-                    <child>
-                      <object class="GtkMenuItem" id="details-menu-usb-redirection">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="tooltip_text" translatable="yes">Redirect host USB device to virtual machine with SPICE graphics.</property>
-                        <property name="label" translatable="yes">_Redirect USB device</property>
-                        <property name="use_underline">True</property>
-                        <signal name="activate" handler="on_details_menu_usb_redirection" swapped="no"/>
-                      </object>
-                    </child>
                   </object>
                 </child>
               </object>
@@ -243,15 +233,6 @@
                       <object class="GtkSeparatorMenuItem" id="menuitem2">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                      </object>
-                    </child>
-                    <child>
-                      <object class="GtkCheckMenuItem" id="details-menu-view-fullscreen">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="label" translatable="yes">_Fullscreen</property>
-                        <property name="use_underline">True</property>
-                        <signal name="activate" handler="on_details_menu_view_fullscreen_activate" swapped="no"/>
                       </object>
                     </child>
                     <child>
@@ -358,6 +339,25 @@
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes">Send _Key</property>
                 <property name="use_underline">True</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkCheckMenuItem" id="details-menu-view-fullscreen">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">_Fullscreen</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_details_menu_view_fullscreen_activate" swapped="no"/>
+              </object>
+            </child>
+            <child>
+              <object class="GtkMenuItem" id="details-menu-usb-redirection">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="tooltip_text" translatable="yes">Redirect host USB device to virtual machine with SPICE graphics.</property>
+                <property name="label" translatable="yes">_Redirect USB device</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_details_menu_usb_redirection" swapped="no"/>
               </object>
             </child>
           </object>
